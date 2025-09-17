@@ -1,0 +1,16 @@
+Button {
+    width: 25;
+    margin: 1 0;
+}
+
+.note {
+    padding-left: 2;
+    color: gray;
+}
+
+#output {
+    border: solid gray;
+    padding: 1;
+    height: 20;
+    overflow: auto;
+}
