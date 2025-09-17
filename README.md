@@ -24,3 +24,8 @@ To generate and display the confusion matrix and ROC curve:
 
 ```bash
 uv run python -m scripts.visualize
+
+## 📊 Sample Visualizations
+
+![Confusion Matrix](confusion_matrix.png)
+![ROC Curve](roc_curve.png)
