@@ -1,0 +1,37 @@
+name: CI-Debug
+
+on: [push]
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: List repo files
+        run: |
+          pwd
+          ls -R .
+
+      - name: Show requirements.txt
+        run: |
+          if [ -f requirements.txt ]; then
+            echo "==== requirements.txt ===="
+            cat requirements.txt
+          else
+            echo "🚨 requirements.txt not found!"
+          fi
+
+      - name: Create venv & Install deps
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verify installed packages
+        run: |
+          source .venv/bin/activate
+          pip list
