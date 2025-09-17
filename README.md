@@ -10,12 +10,8 @@ This project uses scikit-learn to predict whether a breast tumor is benign or ma
 - GitHub Actions CI pipeline
 
 ## 🚀 Getting Started
-## 🧪 Run Tests
 
-To run the automated test suite using pytest:
-
-```bash
-uv run pytest
+To install dependencies and run the main script:
 
 ```bash
 uv sync
