@@ -1,31 +1,71 @@
-# 🧠 Breast Cancer Prediction System
-
-This project uses scikit-learn to predict whether a breast tumor is benign or malignant based on medical features. It includes data preprocessing, model training, evaluation, and visualization.
-
-## 📦 Features
-- Logistic Regression classifier
-- Scaled train/test split
-- Confusion matrix and ROC curve plots
-- Automated testing with pytest
-- GitHub Actions CI pipeline
-
-## 🚀 Getting Started
-
-To install dependencies and run the main script:
-
-```bash
-uv sync
-uv run python main.py
+## ✅ Final `README.md`
 
 ```markdown
-## 📊 Visualize Results
+# 🧠 Breast Cancer Prediction Dashboard
 
-To generate and display the confusion matrix and ROC curve:
+An interactive terminal-based GUI for training, evaluating, and visualizing machine learning models to predict breast cancer diagnoses. Built with Python, Textual, and scikit-learn, this project emphasizes reproducibility, accessibility, and elegant automation.
 
-```bash
-uv run python -m scripts.visualize
+---
 
-## 📊 Sample Visualizations
+## 📂 Project Structure
 
-![Confusion Matrix](confusion_matrix.png)
-![ROC Curve](roc_curve.png)
+```
+breast-cancer-prediction/
+├── .venv/                     # Virtual environment
+├── models/                    # Saved trained models
+├── results/                   # Generated plots and evaluation outputs
+├── src/
+│   ├── gui/
+│   │   └── dashboard.py       # Textual GUI dashboard
+│   ├── models/
+│   │   ├── logistic.py        # Logistic regression training & evaluation
+│   │   └── tree.py            # Decision tree training & evaluation
+│   └── utils/
+│       └── plotting.py        # Confusion matrix & ROC curve plotting
+├── launch.py                  # Launcher script for auto-running dashboard
+└── README.md                  # Project documentation
+```
+
+---
+
+## 🚀 Features
+
+- ✅ Terminal GUI dashboard using [Textual](https://textual.textualize.io/)
+- ✅ One-click training for logistic regression and decision tree models
+- ✅ Confusion matrix and ROC curve generation
+- ✅ Status feedback for every action (success or error)
+- ✅ Modular codebase for easy extension and localization
+- ✅ Arabic localization toggle (planned)
+- ✅ Reproducible setup with `.venv`, launcher script, and organized folders
+## 👥 Team Information
+
+Team information:
+Mohammed Mohammed Hassen Alsabri
+ID: 202270306 Leader
+Ayman Mohammad Mofadal ID: 202170071 Data training 
+Abdolmajed Aldubabi
+ID: 202270256 doucmantation collecting
+
+
+This section lists your team members and their roles in a table:
+
+
+
+It gives credit and shows collaboration.
+
+---
+
+## 📄 License
+
+This tells users the project is open-source and under the MIT License.
+
+---
+
+## 👤 Author
+
+This gives a short bio of you, Ayman, and your mission:
+
+> AI systems builder | Python & MicroPython expert | GUI automation enthusiast  
+> Focused on making technical solutions accessible for Arabic-speaking communities.
+
+---
