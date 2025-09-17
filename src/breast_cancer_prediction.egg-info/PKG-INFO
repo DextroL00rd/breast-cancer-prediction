@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: breast-cancer-prediction
+Version: 0.1.0
+Summary: Predict whether a breast tumor is benign or malignant using scikit-learn
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: pandas>=2.3.0
+Requires-Dist: scikit-learn>=1.7.0
+Requires-Dist: matplotlib>=3.10.3
+Requires-Dist: seaborn>=0.12.0
+Requires-Dist: jupyter>=1.0.0
+Provides-Extra: dev
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+
+# 🧠 Breast Cancer Prediction System
+
+This project uses scikit-learn to predict whether a breast tumor is benign or malignant based on medical features. It includes data preprocessing, model training, evaluation, and visualization.
+
+## 📦 Features
+- Logistic Regression classifier
+- Scaled train/test split
+- Confusion matrix and ROC curve plots
+- Automated testing with pytest
+- GitHub Actions CI pipeline
+
+## 🚀 Getting Started
+
+To install dependencies and run the main script:
+
+```bash
+uv sync
+uv run python main.py
+
+```markdown
+## 📊 Visualize Results
+
+To generate and display the confusion matrix and ROC curve:
+
+```bash
+uv run python -m scripts.visualize
+
+## 📊 Sample Visualizations
+
+![Confusion Matrix](confusion_matrix.png)
+![ROC Curve](roc_curve.png)
